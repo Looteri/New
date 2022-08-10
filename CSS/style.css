@@ -1,0 +1,12 @@
+:root {
+    --background-color: red;
+}
+body {
+    width: 400px;
+}
+header {
+    background-color: var(--background-color);
+}
+p {
+    color: royalblue;
+}
