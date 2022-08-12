@@ -3,16 +3,24 @@
     font-size: 14px;
 }
 
-body { 
-    margin-left: 100px;  
+body {
+    margin: 0;
+    padding: 0;
 }
 
 .container {
-    margin: auto;
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
 }
-header {
-    background-color: #fff;
+.Navi, .contentFV{
+    grid-column-start: 2;
 }
+header, .Navi {
+    background-color: #fef3df;
+}
+
+
+
 
 .logo {
     width: 32px;
@@ -21,18 +29,16 @@ header {
 }
 
 .Navi {
-    display: inline-block;
-    background-color: #fcfcfc;
+    margin-top: 20px;
 }
-
 .Navi ul {
     list-style: none;
-    position: relative;
-    left: 20%;
+    text-align: center;
+    margin-top: 6px;
 }
-
 .Navi li {
     display: inline-block;
+    margin: 0 10px;
 }
 
 .Navi li a {
@@ -40,7 +46,6 @@ header {
     color: royalblue;
     text-transform: uppercase;
     font-size: 12px;
-    margin: 0 10px;
     transition: 1s;
     font-weight: bold;
 }
@@ -51,12 +56,6 @@ header {
     text-decoration: solid;
     font-size: 14px;
     margin: 0 5px;
-}
-
-header::after {
-    content: '';
-    display: table;
-    clear: both;
 }
 
 .butt {
@@ -71,6 +70,9 @@ header::after {
     cursor: pointer;
     opacity: 0.8;
     white-space: pre;
+}
+.NavStart {
+    float: right;
 }
 
 .NavStart, .B_Learn {
@@ -96,46 +98,35 @@ header::after {
     box-shadow: 3px 10px 20px -11px rgba(66, 68, 90, 1);
 }
 
-.Navi, .FirstView {
-    display: block;
-    width: 990px;
-}
-
-.FirstView {
-    display: inline-block;
-    width: 800px;
-    height: 400px;
-    background-color: #fcfcfc;
-}
-
-.contentFV {
-    background-color: #fef3df;
-    width: 780px;
-    height: 340px;
-    margin: 10px;
+.B_Contact, .B_Learn {
+    font-size: 8px;
+    margin-top: 25px;
+    margin-right: 20px;
 }
 
 .contentFV ul {
     list-style: none;
-    padding: 20px 50px;
+    padding: 0 40px;
 }
 
 .contentFV li  {
     margin-top: 10px;
-    width: 52%;
-    display: block;
 }
 
+.contentFV {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 10px 0 40px;
+}
 p.StartG {
-    white-space: pre-line;
     font-weight: bold;
     font-size: 35px;
 }
 
 .money {
     display: block;
-    width: 40%;
+    width: 100%;
     height: auto;
-    float: right;
-    padding: 40px 5px;
+    float: left;
+    padding: 30px 0;
 }
