@@ -1,12 +1,141 @@
-:root {
-    --background-color: red;
+* {
+    font-family: Cambria, sans-serif;
+    font-size: 14px;
 }
-body {
-    width: 400px;
+
+body { 
+    margin-left: 100px;  
+}
+
+.container {
+    margin: auto;
 }
 header {
-    background-color: var(--background-color);
+    background-color: #fff;
 }
-p {
+
+.logo {
+    width: 32px;
+    height: 32px;
+    float: left;
+}
+
+.Navi {
+    display: inline-block;
+    background-color: #fcfcfc;
+}
+
+.Navi ul {
+    list-style: none;
+    position: relative;
+    left: 20%;
+}
+
+.Navi li {
+    display: inline-block;
+}
+
+.Navi li a {
+    text-decoration: none;
     color: royalblue;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin: 0 10px;
+    transition: 1s;
+    font-weight: bold;
+}
+
+.Navi li a:hover {
+    color: crimson;
+    border-bottom: 1px solid;
+    text-decoration: solid;
+    font-size: 14px;
+    margin: 0 5px;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.butt {
+    text-transform: uppercase;
+    border: none;
+    width: 100px;
+    height: 30px;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    cursor: pointer;
+    opacity: 0.8;
+    white-space: pre;
+}
+
+.NavStart, .B_Learn {
+    background-color: #6495ed;
+    background-image: linear-gradient(to right, #5e6dbe, #5967b5, #5461ab);
+}
+
+.NavStart:hover, .B_Learn:hover {
+    background-image: linear-gradient(to right, #5461ab, #5967b5, #5e6dbe);
+    opacity: 1;
+    transition: 1s;
+    box-shadow: 3px 10px 20px -11px rgba(66, 68, 90, 1);
+}
+
+.B_Contact {
+    background-image: linear-gradient(to right, #f3b74c, #e6ae48, #daa444);
+}
+
+.B_Contact:hover {
+    background-image: linear-gradient(to right, #daa444, #e6ae48, #f3b74c);
+    opacity: 1;
+    transition: 1s;
+    box-shadow: 3px 10px 20px -11px rgba(66, 68, 90, 1);
+}
+
+.Navi, .FirstView {
+    display: block;
+    width: 990px;
+}
+
+.FirstView {
+    display: inline-block;
+    width: 800px;
+    height: 400px;
+    background-color: #fcfcfc;
+}
+
+.contentFV {
+    background-color: #fef3df;
+    width: 780px;
+    height: 340px;
+    margin: 10px;
+}
+
+.contentFV ul {
+    list-style: none;
+    padding: 20px 50px;
+}
+
+.contentFV li  {
+    margin-top: 10px;
+    width: 52%;
+    display: block;
+}
+
+p.StartG {
+    white-space: pre-line;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.money {
+    display: block;
+    width: 40%;
+    height: auto;
+    float: right;
+    padding: 40px 5px;
 }
